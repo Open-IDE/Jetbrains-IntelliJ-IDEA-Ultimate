@@ -1,0 +1,4 @@
+- name: Install IntelliJ IDEA Community Edition
+  hosts: localhost
+  roles:
+  - IntelliJ Idea Community

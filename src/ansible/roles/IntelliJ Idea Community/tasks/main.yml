@@ -1,0 +1,20 @@
+# ai query: Can you make me an Ansible playbook to install IntelliJ Idea Community Edition on Ubuntu Linux?
+
+- name: Add IntelliJ IDEA PPA
+  apt_repository:
+    repo: deb https://jetbrains.bintray.com/idea stable main
+    state: present
+    update_cache: yes
+  become: true
+
+- name: Import JetBrains public key
+  apt_key:
+    url: https://jetbrains.bintray.com/gpg/key/public
+    state: present
+  become: true
+
+- name: Install IntelliJ IDEA Community Edition
+  apt:
+    name: intellij-idea-community
+    state: present
+  become: true
