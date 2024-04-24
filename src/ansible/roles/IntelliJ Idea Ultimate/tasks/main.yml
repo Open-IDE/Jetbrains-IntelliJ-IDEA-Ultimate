@@ -1,8 +1,8 @@
 # ai query: Can you make me an Ansible playbook to install IntelliJ Idea Community Edition on Ubuntu Linux?
 
-- name: Install snap: IntelliJ IDEA Community Edition
+- name: Install Install IDEA Ultimate snap
   community.general.snap:
     name:
-      - intellij-idea-community
+      - intellij-idea-ultimate
     classic: true
   become: true
