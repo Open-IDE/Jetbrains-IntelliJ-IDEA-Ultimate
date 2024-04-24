@@ -1,4 +1,4 @@
-- name: Install IntelliJ IDEA Community Edition
+- name: Rust on IntelliJ IDEA Ultimate
   hosts: localhost
   roles:
-  - IntelliJ Idea Community
+  - IntelliJ Idea Ultimate
