@@ -1,4 +1,7 @@
-- name: Rust on IntelliJ IDEA Ultimate
+- name: IntelliJ IDEA Ultimate
   hosts: localhost
+  vars:
+    debug: false
+    GCC_linker: true
   roles:
-  - IntelliJ Idea Ultimate
+    - UniInc.IntelliJ-IDEA-Ultimate
